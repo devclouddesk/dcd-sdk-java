@@ -31,3 +31,4 @@ jobs:
 
       - name: Package JAR
         run: mvn -B package -DskipTests
+

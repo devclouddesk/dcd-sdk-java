@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.devclouddesk</groupId>
+        <artifactId>dcd-sdk-java</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>dcd-storage-client</artifactId>
+    <packaging>jar</packaging>
+
+    <name>DevCloudDesk Storage Client</name>
+    <description>Official Java client library for DevCloudDesk Storage Buckets, Asset Uploads, and Dynamic Image CDN</description>
+    <url>https://devclouddesk.com</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>DevCloudDesk Team</name>
+            <email>support@devclouddesk.com</email>
+            <organization>DevCloudDesk</organization>
+            <organizationUrl>https://devclouddesk.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/devclouddesk/dcd-sdk-java.git</connection>
+        <developerConnection>scm:git:ssh://github.com:devclouddesk/dcd-sdk-java.git</developerConnection>
+        <url>https://github.com/devclouddesk/dcd-sdk-java/tree/main/services/storage</url>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

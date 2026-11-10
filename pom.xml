@@ -5,13 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.devclouddesk</groupId>
-    <artifactId>dcd-storage-client</artifactId>
+    <artifactId>dcd-sdk-java</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
-    <name>DevCloudDesk Storage Client</name>
-    <description>Official Java client library for DevCloudDesk Storage Buckets, Asset Uploads, and Dynamic Image CDN</description>
+    <name>DevCloudDesk Java SDK</name>
+    <description>Parent POM for official DevCloudDesk Java SDK service modules</description>
     <url>https://devclouddesk.com</url>
+
+    <modules>
+        <module>services/storage</module>
+    </modules>
 
     <licenses>
         <license>
@@ -43,21 +47,22 @@
         <junit.version>5.10.1</junit.version>
     </properties>
 
-    <dependencies>
-        <!-- Test Dependencies -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <distributionManagement>
         <snapshotRepository>
